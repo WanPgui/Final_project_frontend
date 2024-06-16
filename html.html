@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Waste Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#household">Household Users</a></li>
+            <li><a href="#waste-services">Waste Collection Services</a></li>
+            <li><a href="#administrators">Administrators</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="register">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="newUsername">Username:</label>
+                <input type="text" id="newUsername" name="newUsername" required>
+                <label for="newPassword">Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+        <section id="household">
+            <h2>Household Users</h2>
+            <div class="card">
+                <h3>Manage Waste Collection Schedule</h3>
+                <button onclick="manageSchedule()">Manage Schedule</button>
+            </div>
+            <div class="card">
+                <h3>Track Recycling Efforts</h3>
+                <button onclick="trackRecycling()">Track Recycling</button>
+            </div>
+            <div class="card">
+                <h3>View Environmental Impact</h3>
+                <button onclick="viewImpact()">View Impact</button>
+            </div>
+        </section>
+        <section id="waste-services">
+            <h2>Waste Collection Services</h2>
+            <div class="card">
+                <h3>Monitor Bin Fill Levels</h3>
+                <button onclick="monitorBins()">Monitor Bins</button>
+            </div>
+            <div class="card">
+                <h3>Identify High Waste Areas</h3>
+                <button onclick="identifyAreas()">Identify Areas</button>
+            </div>
+            <div class="card">
+                <h3>Communicate with Users</h3>
+                <button onclick="communicateUsers()">Communicate</button>
+            </div>
+        </section>
+        <section id="administrators">
+            <h2>Administrators</h2>
+            <div class="card">
+                <h3>Manage User Accounts</h3>
+                <button onclick="manageAccounts()">Manage Accounts</button>
+            </div>
+            <div class="card">
+                <h3>Monitor System Performance</h3>
+                <button onclick="monitorPerformance()">Monitor Performance</button>
+            </div>
+            <div class="card">
+                <h3>Analyze Waste Management Trends</h3>
+                <button onclick="analyzeTrends()">Analyze Trends</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Waste Management System</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
